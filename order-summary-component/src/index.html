@@ -5,25 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order Summary Component</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <span>Order Summary</span>
-    <p>
-      You can now listen to millions of songs, audiobooks, and podcasts on any
-      device anywhere you like!
-    </p>
-    <div>
-      <span>Annual Plan</span>
-      <span>$59.99/year</span>
-      <a href="#">Change</a>
+    <div class="container">
+      <div class="order-summary">
+        <img
+          src="images/illustration-hero.svg"
+          alt="Listener enjoying music"
+          class="hero"
+        />
+        <div class="order-summary__description">
+          <span class="title">Order Summary</span>
+          <p class="description">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="order-summary__pricing">
+            <img src="./images/icon-music.svg" alt="Music icon" />
+            <div class="order-summary__pricing-details">
+              <span>Annual Plan</span>
+              <span>$59.99/year</span>
+            </div>
+            <a href="#">Change</a>
+          </div>
+          <button>Proceed to Payment</button>
+          <button class="ghost">Cancel Order</button>
+        </div>
+      </div>
     </div>
-    <button>Proceed to Payment</button>
-    <button>Cancel Order</button>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/bgrapes">Brian Grapes</a>.
     </div>
   </body>
 </html>
