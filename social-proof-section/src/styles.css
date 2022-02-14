@@ -36,7 +36,7 @@ body {
 .container {
   display: flex;
   margin: auto;
-  min-height: 99vh;
+  min-height: 100vh;
   padding: 20px;
 }
 
@@ -171,6 +171,12 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 700px) {
+  body {
+    background-size: 80%, 75%;
+  }
 }
 
 @media (min-width: 1000px) {
