@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 13px;
+
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-image: url("./images/bg-pattern-top-mobile.svg"),
+    url("./images/bg-pattern-bottom-mobile.svg");
+  background-color: var(--pale-blue);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: var(--desaturated-blue);
+  font-family: "Spartan", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  min-height: 99vh;
+  padding: 20px;
+}
+
+.social-proof-section {
+  border-radius: 20px;
+  margin: auto;
+  max-width: 1110px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__intro {
+  max-width: 700px;
+}
+
+.header__intro h1 {
+  color: var(--very-dark-magenta);
+  font-size: 32px;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin: 65px 0 10px 0;
+  text-align: center;
+}
+
+.header__intro p {
+  color: var(--very-dark-magenta);
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.header__summary {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  gap: 15px;
+  max-width: 540px;
+  width: 100%;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__summary-stars {
+  display: flex;
+  flex-basis: 445px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--light-grayish-magenta);
+  border-radius: 10px;
+  color: var(--very-dark-magenta);
+  font-size: 13px;
+  font-weight: 700;
+  height: 77px;
+}
+
+.header__summary-stars img {
+  height: 16px;
+  margin: 0 4px;
+  width: 16px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.cards__card {
+  flex-basis: 33%;
+  background-color: var(--very-dark-magenta);
+  border-radius: 10px;
+  color: var(--light-grayish-magenta);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 445px;
+  padding: 36px 30px;
+}
+
+.cards__card-author {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.cards__card-author img {
+  border-radius: 21px;
+  height: 42px;
+  margin-right: 20px;
+  width: 42px;
+}
+
+.cards__card-author span {
+  display: block;
+}
+
+.cards__card-author-name {
+  font-weight: 700;
+}
+
+.cards__card-author-title {
+  color: var(--soft-pink);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-image: url("./images/bg-pattern-top-desktop.svg"),
+      url("./images/bg-pattern-bottom-desktop.svg");
+    background-size: 40%, 75%;
+  }
+
+  .header {
+    flex-direction: row;
+  }
+
+  .header__intro {
+    max-width: 450px;
+  }
+
+  .header__intro h1 {
+    font-size: 48px;
+    margin: 30px 0 20px 0;
+    text-align: left;
+  }
+
+  .header__intro p {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .header__summary-stars {
+    flex-basis: 445px;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 14px;
+    height: 54px;
+    padding-left: 25px;
+  }
+
+  .header__summary-stars span {
+    margin-left: 30px;
+  }
+
+  .cards {
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 65px;
+  }
+
+  .cards__card:nth-of-type(1) {
+    margin: 0 0 32px;
+  }
+
+  .cards__card:nth-of-type(2) {
+    margin: 16px 0;
+  }
+
+  .cards__card:nth-of-type(3) {
+    margin: 32px 0 0;
+  }
+}
