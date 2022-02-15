@@ -35,10 +35,10 @@ body {
   padding: 70px 20px;
 }
 
-.testimonials-grid-section {
-  display: block;
+.tip-calculator {
+  display: flex;
   margin: auto;
-  max-width: 1110px;
+  max-width: 920px;
   width: 100%;
 }
 
