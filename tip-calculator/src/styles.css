@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 24px;
+
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --dark-grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background: var(--light-grayish-blue);
+  font-family: "Space Mono", "Courier New", Courier, monospace;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  min-height: 100vh;
+  padding: 70px 20px;
+}
+
+.testimonials-grid-section {
+  display: block;
+  margin: auto;
+  max-width: 1110px;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
