@@ -11,13 +11,16 @@
   <body>
     <main class="container">
       <div class="tip-calculator__wrapper">
-        <h1>Splitter</h1>
+        <header>
+          <h1>Splitter</h1>
+        </header>
         <div class="tip-calculator">
           <section class="inputs">
             <div class="input-group">
               <label for="bill">Bill</label>
               <input
                 type="number"
+                id="bill"
                 name="bill"
                 placeholder="0"
                 pattern="[0-9]*"
@@ -25,37 +28,55 @@
               />
             </div>
             <div class="input-group">
-              <label for="tip-amount">Select Tip %</label>
+              <label id="tip-amount">Select Tip %</label>
               <div class="tip-amounts">
-                <label class="radio-label">
-                  <input type="radio" name="tip-amount" value="5" />
-                  <div>5%</div>
-                </label>
-                <label class="radio-label">
-                  <input type="radio" name="tip-amount" value="10" />
-                  <div>10%</div>
-                </label>
-                <label class="radio-label">
-                  <input type="radio" name="tip-amount" value="10" />
-                  <div>15%</div>
-                </label>
-                <label class="radio-label">
-                  <input type="radio" name="tip-amount" value="10" />
-                  <div>25%</div>
-                </label>
-                <label class="radio-label">
-                  <input type="radio" name="tip-amount" value="10" />
-                  <div>50%</div>
-                </label>
-                <label class="radio-label custom">
-                  <input type="text" name="tip-amount" placeholder="Custom" />
-                </label>
+                <button class="tip-amounts__button" aria-label="5% tip" id="5">
+                  5%
+                </button>
+                <button
+                  class="tip-amounts__button"
+                  aria-label="10% tip"
+                  id="10"
+                >
+                  10%
+                </button>
+                <button
+                  class="tip-amounts__button"
+                  aria-label="15% tip"
+                  id="15"
+                >
+                  15%
+                </button>
+                <button
+                  class="tip-amounts__button"
+                  aria-label="25% tip"
+                  id="25"
+                >
+                  25%
+                </button>
+                <button
+                  class="tip-amounts__button"
+                  aria-label="50% tip"
+                  id="50"
+                >
+                  50%
+                </button>
+                <input
+                  class="tip-amounts__custom"
+                  type="number"
+                  name="tip-amount"
+                  placeholder="Custom"
+                  pattern="[0-9]*"
+                  inputmode="numeric"
+                  aria-label="Custom tip"
+                />
               </div>
             </div>
             <div class="input-group">
               <label for="number-of-people">Number of People</label>
               <input
                 type="number"
+                id="number-of-people"
                 name="number-of-people"
                 placeholder="0"
                 pattern="[0-9]*"
