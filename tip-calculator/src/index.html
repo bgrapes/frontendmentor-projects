@@ -24,6 +24,7 @@
                 name="bill"
                 placeholder="0"
                 pattern="[0-9]*"
+                min="0"
                 inputmode="numeric"
               />
             </div>
@@ -67,19 +68,25 @@
                   name="tip-amount"
                   placeholder="Custom"
                   pattern="[0-9]*"
+                  min="0"
                   inputmode="numeric"
                   aria-label="Custom tip"
+                  autocomplete="off"
                 />
               </div>
             </div>
             <div class="input-group">
-              <label for="number-of-people">Number of People</label>
+              <div class="validation-wrapper">
+                <label for="number-of-people">Number of People</label>
+                <span class="error-message"></span>
+              </div>
               <input
                 type="number"
                 id="number-of-people"
                 name="number-of-people"
                 placeholder="0"
                 pattern="[0-9]*"
+                min="0"
                 inputmode="numeric"
               />
             </div>

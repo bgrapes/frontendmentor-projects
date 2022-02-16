@@ -20,6 +20,7 @@ html {
   --dark-grayish-cyan-2: hsl(184, 14%, 56%);
   --light-grayish-cyan: hsl(185, 41%, 84%);
   --light-grayish-cyan-2: hsl(189, 41%, 97%);
+  --orange: #d47d5f;
   --white: hsl(0, 0%, 100%);
   --shadow: hsl(187, 40%, 76%);
 }
@@ -30,11 +31,14 @@ body {
   margin: 0;
 }
 
+/*
+* Containers
+*/
 .container {
   display: flex;
   margin: auto;
   min-height: 100vh;
-  padding: 70px 20px;
+  padding: 20px 0;
 }
 
 .tip-calculator__wrapper {
@@ -44,16 +48,6 @@ body {
   justify-content: center;
   margin: auto;
   width: 100%;
-}
-
-h1 {
-  color: var(--very-dark-cyan-2);
-  font-size: 24px;
-  letter-spacing: 10px;
-  margin-bottom: 80px;
-  max-width: 100px;
-  text-transform: uppercase;
-  word-wrap: break-word;
 }
 
 .tip-calculator {
@@ -73,11 +67,26 @@ h1 {
   flex-basis: 50%;
 }
 
+/*
+* Header
+*/
+h1 {
+  color: var(--very-dark-cyan-2);
+  font-size: 24px;
+  letter-spacing: 10px;
+  margin-bottom: 32px;
+  max-width: 100px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+/*
+* Input styles
+*/
 .input-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 42px;
-  padding: 0px 15px;
 }
 
 .input-group:last-of-type {
@@ -93,21 +102,27 @@ label {
 
 input {
   background-color: var(--light-grayish-cyan-2);
-  background-position: 17px center;
+  background-position: 15px center;
   background-repeat: no-repeat;
   border: 0;
+  border: 2px solid var(--light-grayish-cyan-2);
   border-radius: 6px;
   color: var(--very-dark-cyan);
   font-size: 24px;
   font-family: inherit;
   font-weight: 700;
-  padding: 5px 17px 5px 35px;
+  padding: 3px 15px 3px 35px;
   text-align: right;
   width: 100%;
 }
 
 ::placeholder {
   color: var(--dark-grayish-cyan-2);
+}
+
+input:focus {
+  border: 2px solid var(--strong-cyan);
+  outline: none !important;
 }
 
 input[name="bill"] {
@@ -120,8 +135,8 @@ input[name="number-of-people"] {
 
 .tip-amounts {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 17px 14px;
   margin-top: 8px;
 }
@@ -140,17 +155,39 @@ input[name="number-of-people"] {
   font-weight: 700;
 }
 
+.tip-amounts__button:hover,
+.tip-amounts__custom:hover,
+.tip-amounts__custom:hover::placeholder {
+  background-color: var(--light-cyan);
+  color: var(--very-dark-cyan);
+}
+
 .tip-amounts__button.active {
   background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
 }
 
 .tip-amounts__custom {
+  cursor: pointer;
   padding: 5px;
   text-align: center;
 }
 
+.tip-amounts__custom:focus:hover,
+.tip-amounts__custom:focus:hover::placeholder {
+  background-color: var(--light-grayish-cyan-2);
+}
+
+.tip-amounts__custom:hover::placeholder {
+  cursor: auto;
+}
+
 .tip-amounts__custom::placeholder {
   color: var(--dark-grayish-cyan);
+}
+
+.tip-amounts__custom:focus::placeholder {
+  color: transparent;
 }
 
 input::-webkit-outer-spin-button,
@@ -163,11 +200,35 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+/*
+* Validation error styles
+*/
+.validation-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input.has-error {
+  border: 2px solid var(--orange);
+}
+
+.error-message {
+  color: var(--orange);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
 .display {
   background-color: var(--very-dark-cyan);
   border-radius: 15px;
 }
 
+/*
+* Footer
+*/
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -177,8 +238,39 @@ input[type="number"] {
   color: hsl(228, 45%, 44%);
 }
 
+/*
+* Media queries
+*/
 @media (min-width: 650px) {
+  .container {
+    padding: 70px 20px;
+  }
+
+  h1 {
+    margin-bottom: 80px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 42px;
+    padding: 0px 15px;
+  }
+
   .tip-calculator {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 800px) {
+  .validation-wrapper {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 900px) {
+  .tip-amounts {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
