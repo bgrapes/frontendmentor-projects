@@ -3,14 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    maximum-scale=1, user-scalable=0"" />
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="container">
-      <div class="tip-calculator">
-        <h1>SPLITTER</h1>
+      <div class="tip-calculator__wrapper">
+        <h1>Splitter</h1>
+        <div class="tip-calculator">
+          <section class="inputs">
+            <div class="input-group">
+              <label for="bill">Bill</label>
+              <input
+                type="number"
+                name="bill"
+                placeholder="0"
+                pattern="[0-9]*"
+                inputmode="numeric"
+              />
+            </div>
+            <div class="input-group">
+              <label for="tip-amount">Select Tip %</label>
+              <div class="tip-amounts">
+                <label class="radio-label">
+                  <input type="radio" name="tip-amount" value="5" />
+                  <div>5%</div>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="tip-amount" value="10" />
+                  <div>10%</div>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="tip-amount" value="10" />
+                  <div>15%</div>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="tip-amount" value="10" />
+                  <div>25%</div>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="tip-amount" value="10" />
+                  <div>50%</div>
+                </label>
+                <label class="radio-label custom">
+                  <input type="text" name="tip-amount" placeholder="Custom" />
+                </label>
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="number-of-people">Number of People</label>
+              <input
+                type="number"
+                name="number-of-people"
+                placeholder="0"
+                pattern="[0-9]*"
+                inputmode="numeric"
+              />
+            </div>
+          </section>
+          <section class="display">Display</section>
+        </div>
       </div>
     </main>
     <footer class="attribution">
