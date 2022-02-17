@@ -14,7 +14,7 @@ Users should be able to:
 
 ## Screenshot
 
-![screenshot](https://raw.githubusercontent.com/bgrapes/frontendmentor-projects/master/tip-calculator/screenshot.png)
+<a href="https://bgrapes-tip-calculator.surge.sh/" target="_blank">![screenshot](https://raw.githubusercontent.com/bgrapes/frontendmentor-projects/master/tip-calculator/screenshot.png)</a>
 
 ## Links
 
