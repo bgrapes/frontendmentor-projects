@@ -282,6 +282,11 @@ input.has-error {
   width: 100%;
 }
 
+.reset:hover {
+  background-color: var(--light-cyan);
+  color: var(--very-dark-cyan);
+}
+
 .reset:disabled {
   background-color: var(--disabled);
 }
