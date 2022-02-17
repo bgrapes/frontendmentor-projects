@@ -31,14 +31,14 @@ billInput.onkeyup = (event) => {
 };
 
 // Set tip amount
-tipBtn5.addEventListener("click", setTip);
-tipBtn10.addEventListener("click", setTip);
-tipBtn15.addEventListener("click", setTip);
-tipBtn25.addEventListener("click", setTip);
-tipBtn50.addEventListener("click", setTip);
-tipBtnCustom.addEventListener("click", setTip);
+tipBtn5.addEventListener("click", setTipRate);
+tipBtn10.addEventListener("click", setTipRate);
+tipBtn15.addEventListener("click", setTipRate);
+tipBtn25.addEventListener("click", setTipRate);
+tipBtn50.addEventListener("click", setTipRate);
+tipBtnCustom.addEventListener("click", setTipRate);
 
-function setTip(event) {
+function setTipRate(event) {
   tipBtns.forEach((btn) => {
     btn.classList.remove("active");
   });
@@ -47,6 +47,11 @@ function setTip(event) {
   resetBtn.disabled = false;
   if (billAmt && numPeople) calculate();
 }
+
+tipBtnCustom.onkeyup = (event) => {
+  tipRate = Number(event.target.value);
+  if (billAmt && numPeople) calculate();
+};
 
 // Set number of people
 numPeopleInput.onkeydown = (event) => {
@@ -103,7 +108,11 @@ function reset() {
   totalPerPerson = 0;
   billInput.value = 0;
   numPeopleInput.value = 0;
+  tipBtnCustom.value = null;
   tipPerPersonDisplay.innerHTML = "$0.00";
   totalPerPersonDisplay.innerHTML = "$0.00";
   resetBtn.disabled = true;
+  tipBtns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
 }
