@@ -23,9 +23,9 @@
                 id="bill"
                 name="bill"
                 placeholder="0"
-                pattern="[0-9]*"
+                pattern="^\\$?(([1-9](\\d*|\\d{0,2}(,\\d{3})*))|0)(\\.\\d{1,2})?$"
                 min="0"
-                inputmode="numeric"
+                inputmode="decimal"
               />
             </div>
             <div class="input-group">
@@ -72,6 +72,7 @@
                   inputmode="numeric"
                   aria-label="Custom tip"
                   autocomplete="off"
+                  id="custom"
                 />
               </div>
             </div>
@@ -91,7 +92,27 @@
               />
             </div>
           </section>
-          <section class="display">Display</section>
+          <section class="display">
+            <div class="display-groups">
+              <div class="display-group">
+                <div class="display-label">
+                  <span class="display-label__title">Tip Amount</span>
+                  <span class="display-label__hint">/ person</span>
+                </div>
+                <div class="display-value" id="tip-amount-per-person">
+                  $0.00
+                </div>
+              </div>
+              <div class="display-group">
+                <div class="display-label">
+                  <span class="display-label__title">Total</span>
+                  <span class="display-label__hint">/ person</span>
+                </div>
+                <div class="display-value" id="total-per-person">$0.00</div>
+              </div>
+            </div>
+            <button class="reset" id="reset" disabled>Reset</button>
+          </section>
         </div>
       </div>
     </main>
@@ -101,5 +122,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/bgrapes">Brian Grapes</a>.
     </footer>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
