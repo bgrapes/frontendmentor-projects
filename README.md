@@ -1,6 +1,6 @@
 # Frontend Mentor Projects
 
-These are my solutions to challenges on [Frontend Mentor](https://www.frontendmentor.io/). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+These are my solutions to challenges on [Frontend Mentor](https://www.frontendmentor.io/). Frontend Mentor challenges help developers improve their coding skills by building realistic projects.
 
 - [Tip Calculator](#tip-calculator)
 - [Social Proof Section](#social-proof-section)
