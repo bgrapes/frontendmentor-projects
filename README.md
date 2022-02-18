@@ -10,11 +10,11 @@ These are my solutions to challenges on [Frontend Mentor](https://www.frontendme
 
 ## Tip Calculator
 
-- [Live Demo](https://bgrapes-testimonials-grid.surge.sh/)
+- [Live Demo](https://bgrapes-tip-calculator.surge.sh/)
 - [View Code](https://github.com/bgrapes/frontendmentor-projects/tree/master/tip-calculator)
-- [Solution Summary on Frontend Mentor](https://www.frontendmentor.io/solutions/testimonials-section-using-css-grid-ptB4X-tQL)
+- [Solution Summary on Frontend Mentor](https://www.frontendmentor.io/solutions/tip-calculator-3EEctWRYa)
 
-<a href="https://bgrapes-testimonials-grid.surge.sh/" target="_blank">![screenshot](https://raw.githubusercontent.com/bgrapes/frontendmentor-projects/master/tip-calculator/screenshot.png)</a>
+<a href="https://bgrapes-tip-calculator.surge.sh/" target="_blank">![screenshot](https://raw.githubusercontent.com/bgrapes/frontendmentor-projects/master/tip-calculator/screenshot.png)</a>
 
 ## Advice Generator App
 
