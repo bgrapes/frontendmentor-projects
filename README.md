@@ -3,6 +3,7 @@
 These are my solutions to challenges on [Frontend Mentor](https://www.frontendmentor.io/). Frontend Mentor challenges help developers improve their coding skills by building realistic projects.
 
 - [Tip Calculator](#tip-calculator)
+- [Advice Generator App](#advice-generator)
 - [Social Proof Section](#social-proof-section)
 - [Testimonials Grid Section](#testimonials-grid-section)
 - [Order Summary Component](#order-summary-component)
@@ -14,6 +15,14 @@ These are my solutions to challenges on [Frontend Mentor](https://www.frontendme
 - [Solution Summary on Frontend Mentor](https://www.frontendmentor.io/solutions/testimonials-section-using-css-grid-ptB4X-tQL)
 
 <a href="https://bgrapes-testimonials-grid.surge.sh/" target="_blank">![screenshot](https://raw.githubusercontent.com/bgrapes/frontendmentor-projects/master/tip-calculator/screenshot.png)</a>
+
+## Advice Generator App
+
+- [Live Demo](https://bgrapes-advice-generator-app.surge.sh/)
+- [View Code](https://github.com/bgrapes/frontendmentor-projects/tree/master/advice-generator-app)
+- [Solution Summary on Frontend Mentor](https://www.frontendmentor.io/solutions/advice-generator-app-WxCYzy32d)
+
+<a href="https://bgrapes-advice-generator-app.surge.sh/" target="_blank">![screenshot](https://raw.githubusercontent.com/bgrapes/frontendmentor-projects/master/advice-generator-app/screenshot.png)</a>
 
 ## Social Proof Section
 
