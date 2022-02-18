@@ -11,7 +11,7 @@ html {
 }
 
 :root {
-  font-size: 28px;
+  font-size: 27px;
 
   --light-cyan: hsl(193, 38%, 86%);
   --neon-green: hsl(150, 100%, 66%);
@@ -43,24 +43,44 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: var(--dark-grayish-blue);
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0px 30px 30px -10px var(--shadow);
   margin: auto;
   max-width: 540px;
-  padding: 48px;
+  padding: 40px 45px 0;
   width: 100%;
 }
 
 h1 {
   color: var(--neon-green);
   font-size: 13px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
 p {
   color: var(--light-cyan);
   text-align: center;
+}
+
+button {
+  background-color: var(--neon-green);
+  background-image: url("./images/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  border-radius: 31px;
+  cursor: pointer;
+  height: 62px;
+  padding: 0;
+  position: relative;
+  top: 31px;
+  width: 62px;
+}
+
+button:hover {
+  box-shadow: 0px 0px 30px 5px var(--neon-green);
 }
 
 /*
