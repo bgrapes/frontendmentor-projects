@@ -18,4 +18,4 @@ Users should be able to:
 ## Links
 
 - [Live Demo](https://bgrapes-advice-generator-app.surge.sh/)
-<!-- - [Solution Summary on Frontend Mentor](https://www.frontendmentor.io/solutions/tip-calculator-3EEctWRYa) -->
+- [Solution Summary on Frontend Mentor](https://www.frontendmentor.io/solutions/advice-generator-app-WxCYzy32d)
