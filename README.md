@@ -3,7 +3,7 @@
 These are my solutions to challenges on [Frontend Mentor](https://www.frontendmentor.io/). Frontend Mentor challenges help developers improve their coding skills by building realistic projects.
 
 - [Tip Calculator](#tip-calculator)
-- [Advice Generator App](#advice-generator)
+- [Advice Generator App](#advice-generator-app)
 - [Social Proof Section](#social-proof-section)
 - [Testimonials Grid Section](#testimonials-grid-section)
 - [Order Summary Component](#order-summary-component)
