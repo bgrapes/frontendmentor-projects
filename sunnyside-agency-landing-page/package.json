@@ -1,0 +1,17 @@
+{
+  "name": "sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "deploy": "npm run build && surge dist/ --domain bgrapes-social-proof-section.surge.sh",
+    "develop": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.3.2"
+  }
+}
