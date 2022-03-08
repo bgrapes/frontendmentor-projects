@@ -8,6 +8,8 @@ module.exports = {
       backgroundImage: {
         "header-desktop": "url('./images/desktop/image-header.jpg')",
         "header-mobile": "url('./images/mobile/image-header.jpg')",
+        "transform-desktop": "url('./images/desktop/image-transform.jpg')",
+        "transform-mobile": "url('./images/mobile/image-transform.jpg')",
       },
       colors: {
         "soft-red": "hsl(7, 99%, 70%)",
