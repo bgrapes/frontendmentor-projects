@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 :root {
   font-size: 16px;
 
@@ -21,36 +11,4 @@ html {
   --light-grayish-blue: hsl(223, 64%, 98%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%); /* (with 75% opacity for lightbox background) */
-}
-
-body {
-  background: var(--background);
-  font-family: "Manrope", Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-/*
-* Containers
-*/
-.container {
-  display: flex;
-  min-height: 100vh;
-}
-
-/*
-* Footer
-*/
-.attribution {
-  color: var(--very-dark-blue);
-  font-size: 11px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.attribution a {
-  color: var(--very-dark-blue);
-}
-
-.attribution a:hover {
-  color: var(--black);
 }
